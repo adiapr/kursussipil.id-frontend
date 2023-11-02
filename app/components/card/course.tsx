@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { format } from 'date-fns'; // Import date-fns
 
 export default function CourseComponent() {
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
     // buat setter 
     const [courses, setCourses] = useState<Course[]>([])
     interface Course {
@@ -14,7 +15,7 @@ export default function CourseComponent() {
     }
 
     useEffect(() => {
-      fetch('http://localhost:8000/api/course')
+      fetch(`${apiUrl}/api/course`)
         .then((response) => response.json())
         .then((data) => {
           const formattedCourses = data.data_course.data.map((course: any) => {

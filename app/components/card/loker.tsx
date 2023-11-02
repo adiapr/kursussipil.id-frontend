@@ -4,6 +4,8 @@ import { format } from 'date-fns'; // Import date-fns
 
 export default function LokerComponent() {
 
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
     const [lokers, setLokers] = useState<Loker[]>([])
     interface Loker {
         formattedDate: string;
@@ -11,7 +13,7 @@ export default function LokerComponent() {
     }
 
     useEffect(()=> {
-        fetch('http://localhost:8000/api/loker')
+        fetch(`${apiUrl}/api/loker`)
         .then((response) => response.json())
         .then((data) => {
             const formattedLokers = data.data_loker.data.map((loker: any) => {
