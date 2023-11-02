@@ -1,45 +1,47 @@
-import React from 'react'
+"use client"
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Header() {
+  const [activeLink, setActiveLink] = useState('');
+
+  // Function to check if the link is active
+  const isLinkActive = (href: string) => {
+    return activeLink === href;
+  };
+
+  useEffect(() => {
+    setActiveLink(window.location.pathname);
+  }, []);
+
   return (
     <header id="header" className="d-flex align-items-center">
-          <div className="container d-flex align-items-center justify-content-between">
+      <div className="container d-flex align-items-center justify-content-between">
+        <Link href={'/'} className="logo">
+            <img src="https://kursussipil.id/img/logo/logo-new.png" alt="" />
+        </Link>
 
-            {/* <h1 className="logo"><a href="index.html">BizLand<span>.</span></a></h1> */}
-            {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-            <a href="index.html" className="logo"><img src="https://kursussipil.id/img/logo/logo-new.png" alt="" /></a>
-
-            <nav id="navbar" className="navbar">
-              <ul>
-                <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a className="nav-link scrollto" href="#about">About</a></li>
-                <li><a className="nav-link scrollto" href="#services">Services</a></li>
-                <li><a className="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-                <li><a className="nav-link scrollto" href="#team">Team</a></li>
-                <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down"></i></a>
-                  <ul>
-                    <li><a href="#">Drop Down 1</a></li>
-                    <li className="dropdown"><a href="#"><span>Deep Drop Down</span> <i className="bi bi-chevron-right"></i></a>
-                      <ul>
-                        <li><a href="#">Deep Drop Down 1</a></li>
-                        <li><a href="#">Deep Drop Down 2</a></li>
-                        <li><a href="#">Deep Drop Down 3</a></li>
-                        <li><a href="#">Deep Drop Down 4</a></li>
-                        <li><a href="#">Deep Drop Down 5</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Drop Down 2</a></li>
-                    <li><a href="#">Drop Down 3</a></li>
-                    <li><a href="#">Drop Down 4</a></li>
-                  </ul>
-                </li>
-                <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-              </ul>
-              <i className="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            {/* <!-- .navbar --> */}
-
-          </div>
-        </header>
-  )
+        <nav id="navbar" className="navbar">
+          <ul>
+            <li>
+              <Link href={'/'} className={`nav-link ${isLinkActive('/') ? 'active' : ''}`}>
+                  Beranda
+              </Link>
+            </li>
+            <li>
+              <Link href={'/bimbingan'}  className={`nav-link ${isLinkActive('/bimbingan') ? 'active' : ''}`}>
+                  Bimbingan
+              </Link>
+            </li>
+            <li>
+              <Link href={'/loker'}  className={`nav-link ${isLinkActive('/loker') ? 'active' : ''}`}>
+                  Loker
+              </Link>
+            </li>
+          </ul>
+          <i className="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+  );
 }

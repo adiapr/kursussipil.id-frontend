@@ -3,10 +3,12 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
 import CourseComponent from './components/card/course'
+import Hero from './partials/hero'
 
 export default function Home() {
   return (
     <div>
+      <Hero />
       <section id="featured-services" className="featured-services">
         <div className="container" data-aos="fade-up">
 

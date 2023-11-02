@@ -5,13 +5,19 @@ import { format } from 'date-fns'; // Import date-fns
 
 export default function CourseComponent() {
     // buat setter 
-    const [courses, setCourses] = useState([])
+    const [courses, setCourses] = useState<Course[]>([])
+    interface Course {
+      formattedDate: any; // atau sesuaikan dengan jenis tipe yang benar
+      judul: any; // atau sesuaikan dengan jenis tipe yang benar
+      kategori: any
+      media: any
+    }
 
     useEffect(() => {
       fetch('http://localhost:8000/api/course')
         .then((response) => response.json())
         .then((data) => {
-          const formattedCourses = data.data_course.data.map((course) => {
+          const formattedCourses = data.data_course.data.map((course: any) => {
             // Format the date within the map function
             const formattedDate = format(new Date(course.date_start), 'dd MMMM yyyy');
             return { ...course, formattedDate };
