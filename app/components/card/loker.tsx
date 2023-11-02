@@ -9,7 +9,13 @@ export default function LokerComponent() {
     const [lokers, setLokers] = useState<Loker[]>([])
     interface Loker {
         formattedDate: string;
-        bagian: string 
+        bagian: string;
+        media: any
+        original_url: any
+        perusahaan: string
+        jurusan: string
+        lokasi: string
+        jenis: string
     }
 
     useEffect(()=> {
