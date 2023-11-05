@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { format } from 'date-fns'; // Import date-fns
+import Image from 'next/image';
 
 export default function LokerComponent() {
 
@@ -41,7 +42,7 @@ export default function LokerComponent() {
                     <div className="card p-3">
                         <div className="row">
                             <div className="col-3">
-                                <img src={loker.media[0].original_url} className="w-100 gambarcard rounded crop ratio ratio-16x9" style={{ objectFit: 'cover' }} />
+                                <Image src={loker.media[0].original_url} className="w-100 gambarcard rounded crop ratio ratio-16x9" style={{ objectFit: 'cover' }} alt=''/>
                             </div>
                             <div className="col-7">
                                 <h5 className="text-primary fw-bold mt-2 md-mt-0">{loker.bagian}</h5>

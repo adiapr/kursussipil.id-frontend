@@ -64,7 +64,7 @@ export default function Home() {
 
           <div className="row">
             <div className="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="assets/img/about.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/about.jpg" className="img-fluid" width={100} height={100} alt="" />
             </div>
             <div className="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
               <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -213,27 +213,27 @@ export default function Home() {
           <div className="row">
 
             <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-              <img src="assets/img/clients/client-1.png" className="img-fluid" alt="" />
+              <Image src="/assets/img/clients/client-1.png" className="img-fluid" alt="" width={100} height={100} />
             </div>
 
             <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-              <img src="assets/img/clients/client-2.png" className="img-fluid" alt="" />
+              <Image src="/assets/img/clients/client-2.png" className="img-fluid" alt="" width={100} height={100} />
             </div>
 
             <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-              <img src="assets/img/clients/client-3.png" className="img-fluid" alt="" />
+              <Image src="/assets/img/clients/client-3.png" className="img-fluid" alt="" width={100} height={100} />
             </div>
 
             <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-              <img src="assets/img/clients/client-4.png" className="img-fluid" alt="" />
+              <Image src="/assets/img/clients/client-4.png" className="img-fluid" alt="" width={100} height={100} />
             </div>
 
             <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-              <img src="assets/img/clients/client-5.png" className="img-fluid" alt="" />
+              <Image src="/assets/img/clients/client-5.png" className="img-fluid" alt="" width={100} height={100} />
             </div>
 
             <div className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-              <img src="assets/img/clients/client-6.png" className="img-fluid" alt="" />
+              <Image src="/assets/img/clients/client-6.png" className="img-fluid" alt="" width={100} height={100} />
             </div>
 
           </div>
@@ -316,7 +316,7 @@ export default function Home() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
+                  <Image src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                   <p>
@@ -329,7 +329,7 @@ export default function Home() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
+                  <Image src="assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                   <p>
@@ -342,7 +342,7 @@ export default function Home() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
+                  <Image src="assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                   <p>
@@ -355,7 +355,7 @@ export default function Home() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
+                  <Image src="assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                   <p>
@@ -368,7 +368,7 @@ export default function Home() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
+                  <Image src="assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                   <p>
@@ -411,91 +411,91 @@ export default function Home() {
           <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-1.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-1.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>App 1</h4>
                 <p>App</p>
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="App 1"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="App 1"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-2.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-2.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Web 3"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Web 3"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-3.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-3.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>App 2</h4>
                 <p>App</p>
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="App 2"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="App 2"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-4.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>Card 2</h4>
                 <p>Card</p>
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Card 2"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Card 2"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-5.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>Web 2</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Web 2"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Web 2"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-6.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>App 3</h4>
                 <p>App</p>
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="App 3"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="App 3"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-7.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>Card 1</h4>
                 <p>Card</p>
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Card 1"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Card 1"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-8.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>Card 3</h4>
                 <p>Card</p>
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Card 3"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Card 3"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt="" />
+              <Image src="/assets/img/portfolio/portfolio-9.jpg" className="img-fluid" width={100} height={100} alt="" />
               <div className="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Web 3"><i className="bx bx-plus"></i></a>
+                <a href="/assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox preview-link" title="Web 3"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" className="details-link" title="More Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
@@ -521,7 +521,7 @@ export default function Home() {
             <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
               <div className="member">
                 <div className="member-img">
-                  <img src="assets/img/team/team-1.jpg" className="img-fluid" alt="" />
+                  <Image src="/assets/img/team/team-1.jpg" width={100} height={100} className="img-fluid" alt="" />
                   <div className="social">
                     <a href=""><i className="bi bi-twitter"></i></a>
                     <a href=""><i className="bi bi-facebook"></i></a>
@@ -539,7 +539,7 @@ export default function Home() {
             <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
               <div className="member">
                 <div className="member-img">
-                  <img src="assets/img/team/team-2.jpg" className="img-fluid" alt="" />
+                  <Image src="/assets/img/team/team-2.jpg" width={100} height={100} className="img-fluid" alt="" />
                   <div className="social">
                     <a href=""><i className="bi bi-twitter"></i></a>
                     <a href=""><i className="bi bi-facebook"></i></a>
@@ -557,7 +557,7 @@ export default function Home() {
             <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
               <div className="member">
                 <div className="member-img">
-                  <img src="assets/img/team/team-3.jpg" className="img-fluid" alt="" />
+                  <Image src="/assets/img/team/team-3.jpg" width={100} height={100} className="img-fluid" alt="" />
                   <div className="social">
                     <a href=""><i className="bi bi-twitter"></i></a>
                     <a href=""><i className="bi bi-facebook"></i></a>
@@ -575,7 +575,7 @@ export default function Home() {
             <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
               <div className="member">
                 <div className="member-img">
-                  <img src="assets/img/team/team-4.jpg" className="img-fluid" alt="" />
+                  <Image src="/assets/img/team/team-4.jpg" width={100} height={100} className="img-fluid" alt="" />
                   <div className="social">
                     <a href=""><i className="bi bi-twitter"></i></a>
                     <a href=""><i className="bi bi-facebook"></i></a>

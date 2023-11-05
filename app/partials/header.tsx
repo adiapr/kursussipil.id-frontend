@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState('');
@@ -18,7 +19,7 @@ export default function Header() {
     <header id="header" className="d-flex align-items-center">
       <div className="container d-flex align-items-center justify-content-between">
         <Link href={'/'} className="logo">
-            <img src="https://kursussipil.id/img/logo/logo-new.png" alt="" />
+            {/* <Image src="https://kursussipil.id/img/logo/logo-new.png" width={100} alt="" /> */}
         </Link>
 
         <nav id="navbar" className="navbar">

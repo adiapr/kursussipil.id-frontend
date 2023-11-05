@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { format } from 'date-fns'; // Import date-fns
+import Image from 'next/image';
 
 export default function CourseComponent() {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
@@ -39,7 +40,7 @@ export default function CourseComponent() {
           <Link href={'/'} suppressHydrationWarning={true}>
             <div className="card">
               <div className="d-flex  ratio ratio-16x9">
-              <img
+              <Image
                 src={course.media[0].original_url}
                 style={{ objectFit: 'cover' }}
                 className="card-img-top"
@@ -76,23 +77,23 @@ export default function CourseComponent() {
                   </div>
                   <div className="col-4 d-block d-md-none">
                       <span  className="my-0 py-0">
-                        <img src="http://localhost:8000/assets/img/icon/stars.png" className="my-0 py-0" width="100%" alt="" />
+                        <Image src="http://localhost:8000/assets/img/icon/stars.png" className="my-0 py-0" width={100} alt="" />
                       </span>
                       <span className="my-0 py-0">
-                        <img src="http://localhost:8000/img/logo/logo-new.png" className="my-0 py-0" width="90%" alt="" />
+                        <Image src="http://localhost:8000/img/logo/logo-new.png" className="my-0 py-0" width={90} alt="" />
                       </span>
                   </div>
                   <div className="col-6 d-none d-md-block">
                       <span style={{ fontSize:'12px', float: 'right' }} className="fw-bold">Online Learning</span><br />
                       <span style={{ fontSize:'12px', float: 'right' }} className="fw-bold">at 
-                        &nbsp; <img src="http://localhost:8000/img/logo/logo-new.png" height="15" alt="" />
+                        &nbsp; <Image src="http://localhost:8000/img/logo/logo-new.png" height={15} alt="" />
                       </span>
                   </div>
                   <div className="col-12 d-none d-md-block">
                       <hr />
                   </div>
                   <div className="col-md-6 py-0 my-0 d-none d-md-block">
-                      <img src="http://localhost:8000/assets/img/icon/stars.png" className="" width="100" alt="" />
+                      <Image src="http://localhost:8000/assets/img/icon/stars.png" className="" width={100} alt="" />
                       <b>Harga Mulai</b>
                   </div>
                   <div className="col-md-6">
