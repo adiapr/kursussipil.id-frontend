@@ -32,13 +32,13 @@ export default function LokerComponent() {
         .catch((er) => {
           console.log('Err mengambil data', er)  
         });
-    }, [])
+    }, [apiUrl])
 
   return (
     <div className="row">
         {lokers.length > 0 ? (
-            lokers.map((loker) => (
-                <div className="col-md-6 my-2">
+            lokers.map((loker, index) => (
+                <div key={index} className="col-md-6 my-2">
                     <div className="card p-3">
                         <div className="row">
                             <div className="col-3">
