@@ -29,14 +29,14 @@ export default function CourseComponent() {
         .catch((error) => {
           console.log('Error mengambil data', error);
         });
-    }, []);
+    }, [apiUrl]);
 
   return (
     <div className="row mb-5">
         
         {courses.length > 0 ? (
-        courses.map((course) => (
-            <div className="col-md-3 col-6 mt-3 px-1 px-md-2">
+        courses.map((course, index) => (
+            <div key={index} className="col-md-3 col-6 mt-3 px-1 px-md-2">
           <Link href={'/'} suppressHydrationWarning={true}>
             <div className="card">
               <div className="d-flex  ratio ratio-16x9">
