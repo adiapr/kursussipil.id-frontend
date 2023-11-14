@@ -64,9 +64,9 @@ export default function LokerComponent() {
                                         <i className="bi bi-check-circle-fill text-primary"></i> &nbsp; Activated
                                     </div>
                                 </div>
-                                    <a href="{{ route('user.loker.show', $item->slug) }}" className="btn btn-primary mt-2 w-100">
-                                        <i className="bi bi-telegram"></i> Detail
-                                    </a>
+                                <a href="{{ route('user.loker.show', $item->slug) }}" className="btn btn-primary mt-2 w-100">
+                                    <i className="bi bi-telegram"></i> Detail
+                                </a>
                             </div>
                             <div className="col-12">
                                 <div className="row d-none d-md-flex mt-2" style={{ fontSize: '14px' }}>
@@ -79,7 +79,6 @@ export default function LokerComponent() {
                                     <div className="col-6 col-md-3">
                                         <i className="bi bi-pin-map text-primary"></i> &nbsp; {loker.lokasi}
                                     </div>
-                                    
                                     <div className="col-6 col-md-3">
                                         <i className="bi bi-clock text-primary"></i> &nbsp; {loker.jenis}
                                     </div>
